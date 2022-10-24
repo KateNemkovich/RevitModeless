@@ -1,0 +1,33 @@
+﻿<Window
+    x:Class="RevitModeless.Views.RevitModelessView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:viewModel="clr-namespace:RevitModeless.ViewModels"
+    mc:Ignorable="d"
+    d:DataContext="{d:DesignInstance viewModel:RevitModelessViewModel}"
+    WindowStartupLocation="CenterScreen"
+    ResizeMode="NoResize"
+    Title="RevitModeless"
+    Height="450"
+    Width="800">
+    <StackPanel
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+        <TextBlock
+            Text="RevitModeless"
+            FontSize="60"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center" />
+        <Button 
+            Background="Beige" 
+            Foreground="Blue" 
+            FontWeight="Bold" 
+            Height="50"
+            Width="150"
+            Content="Delete selection"
+            Command="{Binding DeleteCommand}">
+        </Button>
+    </StackPanel>
+</Window>

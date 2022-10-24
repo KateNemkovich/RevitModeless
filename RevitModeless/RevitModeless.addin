@@ -1,0 +1,10 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>RevitModeless</Name>
+        <Assembly>RevitModeless/RevitModeless.dll</Assembly>
+        <AddInId>2317A1C6-5C0E-4ECC-968F-0A3974305D47</AddInId>
+        <FullClassName>RevitModeless.Application</FullClassName>
+        <VendorId>CompanyName</VendorId>
+        <VendorDescription>Description</VendorDescription>
+    </AddIn>
+</RevitAddIns>
